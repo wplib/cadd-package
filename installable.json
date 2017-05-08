@@ -1,7 +1,13 @@
 {
-  "name": "caddy",
+  "name": "Caddy Web Server",
   "version": "0.1.0",
-  "scripts": [
-    "install.sh"
+  "type": "container/webserver",
+  "website": "https://github.com/wplib/caddy-package",
+  "contains": [
+    {
+      "website": "https://caddyserver.com",
+      "version": "0.10.2",
+      "type": "service/linux"
+    }
   ]
 }
