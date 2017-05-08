@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker stop apache 2>&1 > /dev/null
+docker stop nginx 2>&1 > /dev/null
+docker start caddy 2>&1 > /dev/null
+
+jq --arg caddy "caddy" '.services.webserver = $caddy' /vagrant/project.json > new.json && mv new.json /vagrant/project.json
