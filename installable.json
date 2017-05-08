@@ -1,0 +1,7 @@
+{
+  "name": "caddy",
+  "version": "0.1.0",
+  "scripts": [
+    "install.sh"
+  ]
+}
