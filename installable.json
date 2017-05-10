@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "type": "container/webserver",
   "download": "wplib/caddy",
+  "containername": "caddy",
   "website": "https://github.com/wplib/caddy-package",
   "contains": [
     {
