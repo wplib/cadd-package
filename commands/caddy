@@ -6,4 +6,4 @@ docker stop $(jq ".services.webserver" /vagrant/project.json) 2>&1 > /dev/null
 docker start caddy 2>&1 > /dev/null
 
 #udpate the project.json
-jq --arg caddy "caddy" '.services.webserver = $caddy' /vagrant/project.json > new.json && mv new.json /vagrant/project.json
+jq --arg caddy "caddy" '.services.webserver = $caddy' /vagrant/project.json > /tmp/project.json && mv /tmp/project.json /vagrant/project.json
