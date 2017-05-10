@@ -2,6 +2,7 @@
   "name": "Caddy Web Server",
   "version": "0.1.0",
   "type": "container/webserver",
+  "download": "wplib/caddy",
   "website": "https://github.com/wplib/caddy-package",
   "contains": [
     {
@@ -11,3 +12,4 @@
     }
   ]
 }
+
