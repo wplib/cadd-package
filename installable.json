@@ -4,7 +4,7 @@
   "type": "container/webserver",
   "download": "wplib/caddy",
   "containername": "caddy",
-  "options": "-v /var/www:/var/www -p 80:80",
+  "options": "-v /var/www:/var/www -p 8080:80",
   "website": "https://github.com/wplib/caddy-package",
   "contains": [
     {
