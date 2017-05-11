@@ -1,5 +1,3 @@
 #!/usr/bin/env bash
 
-docker stop $(jq -r ".services.webserver" /vagrant/project.json) 2>&1 > /dev/null \
-&& docker start caddy 2>&1 > /dev/null \
-&& jq --arg caddy "caddy" '.services.webserver = $caddy' /vagrant/project.json > /tmp/project.json && mv /tmp/project.json /vagrant/project.json
+source "${WPLIB_BOX_COMMANDS_DIR}/set-webserver" caddy
