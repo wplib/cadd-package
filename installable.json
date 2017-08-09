@@ -1,10 +1,11 @@
 {
   "name": "Caddy Web Server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "container/webserver",
   "download": "wplib/caddy",
   "containername": "caddy",
-  "options": "-v /var/www:/var/www -p 8080:80",
+  "working_directory": "/var/www",
+  "port": "8080",
   "website": "https://github.com/wplib/caddy-package",
   "contains": [
     {
